@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        aside {
+            width: 40%;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            margin-left: 5px;
+            margin-right: 60px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body style="background-color: #EEEEEE;">
+    <div style="margin-left: 40px;">
+        <div style="text-align: left;">
+            <h1 style="text-align: center;"> // Write a program in any language to find the maximum and minimum element in an array.</h1>
+            <h2><strong>Code:</strong></h2>
+            <div style="margin-left: 60px;">
+                <artical>
+                    <code style="font-family: 'Fira Code', monospace;">
+                        <p>#include &lt; stdio.h &gt; </p>
+                        <p>#include &lt; limits.h &gt; </p>
+
+                        <p>void findMinimumMaximum(int arr[], int N)</p>
+                        <p>{</p>
+                            <p>int i;</p>
+                            <p>int minE = INT_MAX, maxE = INT_MIN;</p>
+                            <p>for (i = 0; i < N; i++) {</p>
+                            <p>if (arr[i] < minE) {</p>
+                                   <p> minE = arr[i];</p>
+                                <p>}</p>
+                                <p>if (arr[i] > maxE) {</p>
+                                    <p>maxE = arr[i];</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>printf("The minimum element is %d", minE);</p>
+                            <p>printf("\n");</p>
+                            <p>printf("The maximum element is %d", maxE);</p>
+                            <p>return;</p>
+                        <p>}</p>
+                        <p>int main()</p>
+                        <p>{</p>
+                            <p>int arr[] = { 1, 2, 4, -1 };</p>
+                            <p>int N = sizeof(arr) / sizeof(arr[0]);</p>
+                            <p>findMinimumMaximum(arr, N);</p>
+                            <p>return 0;</p>
+                        <p>}</p>
+
+                    </code>
+                </artical>
+            </div>
+        </div>
+
+        <br>
+        <hr noshade=" solid grey 2px">
+        <h3>Time Complexity : O(n)</h3>
+        <hr noshade=" solid grey 2px">
+        <aside>
+            <samp>
+                <h2>Sample Input </h2>
+                <em>1, 2, 4, -1</em>
+                <br>
+            </samp>
+        </aside>
+        <aside>
+            <samp>
+                <h2>Sample Output</h2>
+                <em>The minimum element is -1</em>
+                <em>The maximum element is 4</em>
+            </samp>
+        </aside>
+        <br>
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br><br>
+</body>
+
+</html>
